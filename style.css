@@ -35,3 +35,24 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+/*I copied this part from a website I like!
+https://prequelcatalog.lunari.se/
+*/
+#list li:defined{
+  animation: sideslide 0.4s ease-in;
+}
+
+@keyframes sideslide {
+  0% {
+      opacity: 0;
+      transform: translate(-110px, 0px);
+  }
+  70% {
+      opacity: 0.2;
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0px, 0px);
+  }
+}
